@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner reader = new Scanner(System.in);  // Reading from System.in
+	System.out.println("How long are your logs in metres?");
+	double lengthOfLogs = reader.nextDouble(); // Scans the next token of the input as an int.
+	double numberOfLogs = 1100 / lengthOfLogs;
+	int numberOfLogsInt = (int)numberOfLogs;
+	System.out.println("Your truck can hold " + numberOfLogsInt + " logs");
+  }
+}
